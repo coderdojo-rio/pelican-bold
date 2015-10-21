@@ -1,6 +1,11 @@
 {% extends 'base.html' %}
 
-{% block title %}{{ SITENAME }} | {{ category|title }}{{ tag|title }}{% endblock %}
+{% block title %}
+{{ SITENAME }}
+{% if category or tag %}
+  | {{ category|title }}{{ tag|title }}
+{% endif %}
+{% endblock %}
 {% block meta_description %}Postagens de {{ category }}{{ tag }}{% endblock %}
 {% block meta_keywords %}{{ category }}{{ tag }}{% endblock %}
 

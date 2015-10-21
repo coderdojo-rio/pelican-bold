@@ -20,7 +20,7 @@
     {% endif %}
     <ul class="social rfloat">
     {% for name, uri in SOCIAL %}
-        <li><a title="{{ name }}" href="{{ uri }}"></a></li>
+        <li><a title="{{ name }}" href="{{ uri }}" target='_blank'></a></li>
     {% endfor %}
     {% if FEED_ATOM %}
         <li><a href="{{ FEED_DOMAIN }}/{{ FEED_ATOM }}" class="feed" type="atom+xml"></a></li>

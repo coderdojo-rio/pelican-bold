@@ -14,10 +14,10 @@
     <body>
         <header class="site highlight">
             {% if SITESUBTITLES %}
-                <h1 class="stamp lrot bs">{{ SITESUBTITLES[0] }}</h1>
-                <h1 class="stamp rrot rfloat">{{ SITESUBTITLES[1] }}</h1>
+                <h1 class="stamp lrot bs"><a href='/'>{{ SITESUBTITLES[0] }}</a></h1>
+                <h1 class="rrot rfloat">{{ SITESUBTITLES[1] }}</h1>
             {% else %}
-                <h1 class="stamp lrot">{{ SITESUBTITLE }}</h1>
+                <h1 class="stamp lrot"><a href='/'>{{ SITESUBTITLE }}</a></h1>
             {% endif %}
         </header>
         <div class="site clearfix">
